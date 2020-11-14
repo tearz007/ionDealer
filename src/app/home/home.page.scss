@@ -1,53 +1,48 @@
 * {
   font-family: cursive;
 }
+
 .contain {
   width: 100vw;
   height: 100vh;
   // background-color: antiquewhite;
   background-image: url("../../assets/5.png");
-  background-position: center;
+  background-position: top;
   background-size: 500px;
   background-repeat: no-repeat;
-
-  .nev {
-    width: 100%;
-    height: 10%;
-    border-bottom: 1px black solid;
-    border-radius: 15px;
-    #title {
-      color: blue;
+  position: relative;
+  #text {
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+  }
+  .collection {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    .log {
+      //border: 1px solid black;
+      margin-top: 10%;
+      box-shadow: 2px 2px 2px 2px;
+      border-radius: 5px;
+    }
+    .btn {
       margin: auto;
       text-align: center;
-      line-height: 50px;
+      width: 70%;
+      margin-top: 10%;
     }
-
-    .img {
-      width: 30%;
-      height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-      clear: both;
+    .tosignUp{
+      float: right;
+     // font-size: 10px;
     }
   }
 }
-
-#item,#text{
-  margin: auto;
-  width: 300px;
-}
-
-.details{
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   margin: auto;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  
-  #input{
-    background-color: transparent;
-  }
 }
