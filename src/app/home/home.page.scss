@@ -38,6 +38,31 @@
      // font-size: 10px;
     }
   }
+
+  .signin_option{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+
+    .signin_math{
+        width: 100%;
+        height: 15vh;
+        //background-color: gray;
+        display: flex;
+        
+      .mathoud{
+        width: 25%;
+        height: 100%;
+        background-color: honeydew;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        box-shadow: 2px 2px;
+      }
+    }
+  }
 }
 .footer {
   position: fixed;
