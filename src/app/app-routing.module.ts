@@ -22,6 +22,18 @@ const routes: Routes = [
     path: 'regiter',
     loadChildren: () => import('./pages/regiter/regiter.module').then( m => m.RegiterPageModule)
   },
+  {
+    path: 'tap1',
+    loadChildren: () => import('./pages/tap1/tap1.module').then( m => m.Tap1PageModule)
+  },
+  {
+    path: 'tap2',
+    loadChildren: () => import('./pages/tap2/tap2.module').then( m => m.Tap2PageModule)
+  },
+  {
+    path: 'tap3',
+    loadChildren: () => import('./pages/tap3/tap3.module').then( m => m.Tap3PageModule)
+  },
 
 
 
