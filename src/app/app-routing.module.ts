@@ -8,12 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'menu',
+    redirectTo: 'map',
     pathMatch: 'full'
   },
   {
     path: 'menu',
-    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule),
   },
   {
     path: 'card',
@@ -24,17 +24,22 @@ const routes: Routes = [
     loadChildren: () => import('./pages/regiter/regiter.module').then( m => m.RegiterPageModule)
   },
   {
-    path: 'tap1',
+    path: 'menu/tap1',
     loadChildren: () => import('./pages/tap1/tap1.module').then( m => m.Tap1PageModule)
   },
   {
-    path: 'tap2',
+    path: 'menu/tap2',
     loadChildren: () => import('./pages/tap2/tap2.module').then( m => m.Tap2PageModule)
   },
   {
-    path: 'tap3',
+    path: 'menu/tap3',
     loadChildren: () => import('./pages/tap3/tap3.module').then( m => m.Tap3PageModule)
   },
+  {
+    path: 'map',
+    loadChildren: () => import('./pages/map/map.module').then( m => m.MapPageModule)
+  },
+
 
 
 
