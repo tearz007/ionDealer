@@ -8,13 +8,22 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'menu',
+    redirectTo: 'card',
     pathMatch: 'full'
   },
   {
     path: 'menu',
     loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },  {
+    path: 'regiter',
+    loadChildren: () => import('./pages/regiter/regiter.module').then( m => m.RegiterPageModule)
+  },
+
+
 
 ];
 

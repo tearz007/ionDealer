@@ -1,26 +1,46 @@
+
 <ion-header>
-  <ion-item>
-    <img src="../../../assets/weed/8,1.png">
-  </ion-item>
+ <ion-toolbar>
+  <img src="../../../assets/weed/8,1.png"> 
+</ion-toolbar>
 </ion-header>
-<div class="contain">
-
-  <div class="collection">
-
-    <div class="menu_collection ">
-
-      <div class="menu_item"></div>
-      <div class="menu_item"></div>
-      <div class="menu_item"></div>
-
-    </div>
 
 
-  </div>
-</div>
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="cd">
+        <ion-label>Raw</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+      <ion-tab-button>
+        <ion-label>Rolled</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+      <ion-tab-button>
+        <ion-label>Seeds</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
 
+<ion-content>
+  <ion-infinite-scroll threshold="100px">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+      <img src="../../../assets/weed/1.jpg">
+     <img src="../../../assets/weed/3.jpg">
+      <img src="../../../assets/weed/2.jpg">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  
+</ion-content>
 
 <!--
+
  <ion-tabs>
       <ion-tab-bar slot="top">
         <ion-tab-button tab="schedule">
