@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'card',
+    redirectTo: 'menu',
     pathMatch: 'full'
   },
   {
@@ -18,7 +18,8 @@ const routes: Routes = [
   {
     path: 'card',
     loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
-  },  {
+  },
+  {
     path: 'regiter',
     loadChildren: () => import('./pages/regiter/regiter.module').then( m => m.RegiterPageModule)
   },
