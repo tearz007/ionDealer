@@ -6,18 +6,20 @@
 </ion-header>
 
 
-<ion-toolbar>
+<ion-toolbar class="taps">
   <ion-tabs>
     <ion-tab-bar slot="top">
-      <ion-tab-button tab="menu1">
+      <ion-tab-button tab="tap1">
         <ion-label>Raw</ion-label>
         <ion-badge>6</ion-badge>
       </ion-tab-button>
-      <ion-tab-button>
+
+      <ion-tab-button  tab="tap2">
         <ion-label>Rolled</ion-label>
         <ion-badge>6</ion-badge>
       </ion-tab-button>
-      <ion-tab-button>
+
+      <ion-tab-button  tab="tap3">
         <ion-label>Seeds</ion-label>
         <ion-badge>6</ion-badge>
       </ion-tab-button>
@@ -26,18 +28,7 @@
   </ion-tabs>
 </ion-toolbar>
 
-<ion-content>
-  <ion-infinite-scroll threshold="100px">
-    <ion-infinite-scroll-content
-      loadingSpinner="bubbles"
-      loadingText="Loading more data...">
-      <img src="../../../assets/weed/1.jpg">
-     <img src="../../../assets/weed/3.jpg">
-      <img src="../../../assets/weed/2.jpg">
-    </ion-infinite-scroll-content>
-  </ion-infinite-scroll>
-  
-</ion-content>
+
 
 <!--
 
