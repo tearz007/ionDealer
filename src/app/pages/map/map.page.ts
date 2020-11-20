@@ -12,6 +12,7 @@ export class MapPage implements OnInit {
 
   ngOnInit() {
     mapboxgl.accessToken = 'pk.eyJ1IjoidGVhcnoiLCJhIjoiY2toa2dqcmM3MWIwNjJ5cDlqazhyYzdteiJ9.jYlNVUpq4tkE1jva-mtyqg';
+    mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.0/mapbox-gl-rtl-text.js');
 
     var map = new mapboxgl.Map({
       container: 'map', // container id
@@ -24,16 +25,16 @@ export class MapPage implements OnInit {
     map.addControl(
       new mapboxgl.GeolocateControl({
       positionOptions: {
-      enableHighAccuracy: true
+      enableHighAccuracy: false
       },
       trackUserLocation: true
       })
+
+     
       );
     // Add zoom and rotation controls to the map.
 
     map.addControl(new mapboxgl.NavigationControl());
-
-
 
 
     map.on('load', function () {
