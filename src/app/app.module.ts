@@ -11,10 +11,11 @@ import { AppRoutingModule } from './app-routing.module';
 import {Tap1PageModule} from './pages/tap1/tap1.module'
 import { from } from 'rxjs';
 import { MenuPage } from './pages/menu/menu.page';
+import { CardPage } from './pages/card/card.page';
 
 
 @NgModule({
-  declarations: [AppComponent,MenuPage],
+  declarations: [AppComponent,MenuPage,CardPage],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,Tap1PageModule],
   providers: [

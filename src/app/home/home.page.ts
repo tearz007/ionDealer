@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router} from '@angular/router'
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,9 @@ import { Router} from '@angular/router'
 })
 export class HomePage {
 
-  constructor(private route:Router) {}
+  constructor(private route:Router,public loadingController: LoadingController) {}
+
+  
 
   googleLogin(){
     alert("Google");
@@ -22,6 +25,10 @@ export class HomePage {
 
   toRegistration(){
     this.route.navigate(['regiter'])
+  }
+
+  toMenu(){
+    this.route.navigate(['menu'])
   }
 
 }

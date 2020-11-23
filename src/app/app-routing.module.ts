@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { CardPage } from './pages/card/card.page';
 import { MenuPage } from './pages/menu/menu.page';
 import { Tap1Page } from './pages/tap1/tap1.page';
 
@@ -11,12 +12,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'menu',
+    redirectTo: 'menu/tap1',
     pathMatch: 'full'
   },
+
   {
    path:'menu', component:MenuPage,
     children:[
+      
     {
       path: 'tap1',
      loadChildren: () => import('./pages/tap1/tap1.module').then( m => m.Tap1PageModule)
@@ -35,8 +38,8 @@ const routes: Routes = [
 
 
   {
-    path: 'card',
-    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+    path: 'card',component:CardPage,
+    //loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
   },
   {
     path: 'regiter',
