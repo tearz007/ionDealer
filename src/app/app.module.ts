@@ -12,6 +12,8 @@ import {Tap1PageModule} from './pages/tap1/tap1.module'
 import { from } from 'rxjs';
 import { MenuPage } from './pages/menu/menu.page';
 import { CardPage } from './pages/card/card.page';
+import { MapPage } from './pages/map/map.page';
+
 
 
 @NgModule({
