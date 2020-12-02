@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { reverse } from 'dns';
+import { start } from 'repl';
 import { ServisesService } from 'src/app/servises.service';
 
 declare var mapboxgl;
@@ -21,7 +23,15 @@ export class Map1Page implements OnInit {
     this.mapFunction2();
     this.mapLocation();
     // this.viewD();
+
+    this.service.map.on('click', this.onMapClick);
   }
+
+
+  onMapClick(e) {
+    alert("You clicked the map at " + e. lngLat.lng);
+  }
+
   mapFunction2() {
     this.service.map.on("load", () => {
       this.service.map.resize();
@@ -44,6 +54,7 @@ export class Map1Page implements OnInit {
     this.service.map.addControl(
       new MapboxDirections({
         accessToken: mapboxgl.accessToken
+       
       }),
       'top-left'
     );

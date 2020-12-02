@@ -11,8 +11,7 @@ declare var  MapboxDirections;
 })
 export class Map3Page implements OnInit {
 
-  map;
-  turf;
+ 
   constructor(private service:ServisesService ) { }
 
   ngOnInit() {
